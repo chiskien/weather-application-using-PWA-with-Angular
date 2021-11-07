@@ -10,13 +10,13 @@
 <mat-card *ngIf="weather">
   <mat-card-header>
     <mat-card-title
-    >{{ weather.name }}, {{ weather.sys.country }}</mat-card-title
+      >{{ weather.name }}, {{ weather.sys.country }}</mat-card-title
     >
     <mat-card-subtitle>{{ weather.weather[0].main }} </mat-card-subtitle>
   </mat-card-header>
   <img
     mat-card-image
-    src="https://openweathermap.org/img/wn/{{weather.weather[0].icon}}@2x.png"
+    src="https://openweathermap.org/img/wn/{{ weather.weather[0].icon }}@2x.png"
     [alt]="weather.weather[0].main"
   />
   <mat-card-content>
