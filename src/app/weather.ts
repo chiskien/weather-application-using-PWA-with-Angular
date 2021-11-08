@@ -4,6 +4,7 @@ export interface Weather {
     temp: number;
     pressure: number;
     humidity: number;
+    dig: number;
   };
   wind: {
     speed: number;
